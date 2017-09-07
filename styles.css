@@ -1,0 +1,25 @@
+.container-fluid {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul {
+  width: 33vw;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  position: fixed;
+  padding: 15px;
+  font-weight: bold;
+}
