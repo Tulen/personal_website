@@ -3,11 +3,88 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  outline: none;
 }
 
-a:hover {
+.section-body {
+  background-color: #50514F;
+  height: 500px;
+  color: #fdfdfd;
+}
+
+.about__text {
+  width: 80%;
+}
+
+.about__text h3 {
+  padding: 20px;
+}
+
+/* .container-fluid div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+h3 {
+  margin: 0;
+}
+
+.menu__link {
+  color: #A2999E;
+}
+
+.menu__link:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #D94F5C;
+}
+
+.menu__link:focus , menu__link:visited {
   text-decoration: none;
 }
+
+/* Prospero boilerplate https://github.com/codrops/LineMenuStyles */
+
+/* .menu .menu__link {
+	position: relative;
+	display: block;
+	margin: 0 1.5em;
+	padding: 0.75em 0;
+	text-align: center;
+	color: #b5b5b5;
+	transition: color 0.3s;
+}
+
+.menu .menu__link:hover,
+.menu .menu__link:focus {
+	color: #929292;
+}
+
+.menu .menu__item--current .menu__link {
+	color: #d94f5c;
+}
+
+.menu .menu__link::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 4px;
+	background: #d94f5c;
+	transform: scale3d(0, 1, 1);
+	transition: transform 0.1s;
+}
+
+.menu .menu__item--current .menu__link::before {
+	transform: scale3d(1, 1, 1);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 0.3s;
+} */
+
+/* ***** */
 
 nav {
   display: flex;
@@ -22,4 +99,18 @@ nav ul {
   position: fixed;
   padding: 15px;
   font-weight: bold;
+}
+
+#burger {
+  display: none;
+  right: 10px;
+}
+
+.arrow-down {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  nav ul {display: none}
+  #burger {display: block; position: fixed; padding: 15px;}
 }
