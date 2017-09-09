@@ -30,8 +30,13 @@
 
 #portfolio-grid .col-md-8 {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.tech-icons {
+  font-size: 4em;
 }
 
 #photo-item-a {
@@ -44,7 +49,7 @@
 }
 
 #photo-item-b {
-  background: url(assets/sign-up.gif);
+  background: url(assets/generator_demo.gif);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -76,13 +81,13 @@ h3 {
   color: #A2999E;
 }
 
-.menu__link:hover {
+a:hover {
   text-decoration: none;
   cursor: pointer;
   color: #D94F5C;
 }
 
-.menu__link:focus , menu__link:visited {
+a:focus , a:visited {
   text-decoration: none;
 }
 
@@ -145,10 +150,6 @@ nav ul {
 #burger {
   display: none;
   right: 10px;
-}
-
-.arrow-down {
-  cursor: pointer;
 }
 
 @media screen and (max-width: 700px) {
