@@ -6,7 +6,7 @@
   outline: none;
 }
 
-.section-body {
+#about-body {
   background-color: #50514F;
   height: 500px;
   color: #fdfdfd;
@@ -18,6 +18,47 @@
 
 .about__text h3 {
   padding: 20px;
+}
+
+#portfolio-grid div {
+  height: 400px;
+}
+
+#portfolio-grid .col-md-4{
+  background-color: #50514F;
+}
+
+#portfolio-grid .col-md-8 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#photo-item-a {
+  background: url(assets/sign-up.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+#photo-item-b {
+  background: url(assets/sign-up.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+#photo-item-c {
+  background: url(assets/entity-animation.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
 }
 
 /* .container-fluid div {
