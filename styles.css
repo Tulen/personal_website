@@ -1,5 +1,5 @@
-h4 {
-  text-align: center;
+body {
+  font-family: 'Raleway', sans-serif;
 }
 
 .container-fluid {
@@ -35,11 +35,8 @@ h4 {
 #portfolio-grid .col-md-6 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
-
-
 
 .tech-icons {
   font-size: 4em;
@@ -171,3 +168,10 @@ nav ul {
   nav ul {display: none}
   #burger {display: block; position: fixed; padding: 15px;}
 }
+
+@media screen and (max-width: 992px) { 
+  #portfolio-grid .col-md-6 { 
+    align-items: center;
+    text-align: center;
+  }
+ }
