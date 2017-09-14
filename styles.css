@@ -174,7 +174,11 @@ nav ul {
   padding: 15px;
 }
 
-.contact__item > * > * {
+.contact__item a{
+  padding: 0;
+}
+
+.contact__item > * > a > i {
   padding: 15px;
 }
 
