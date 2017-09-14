@@ -38,10 +38,6 @@ body {
   align-items: flex-start;
 }
 
-.tech-icons {
-  font-size: 4em;
-}
-
 #photo-item-a {
   background: url(assets/sign-up.gif);
   background-size: contain;
@@ -78,6 +74,16 @@ body {
 
 h3 {
   margin: 0;
+}
+
+ul {
+  text-align: left;
+}
+
+.menu {
+  z-index: 1;
+  background-color: white;
+  border-radius: 5px;
 }
 
 .menu__link {
@@ -162,6 +168,14 @@ nav ul {
 
 .contact__list {
   list-style-type: none;
+}
+
+.contact__item {
+  padding: 15px;
+}
+
+.contact__item > * > * {
+  padding: 15px;
 }
 
 @media screen and (max-width: 700px) {
