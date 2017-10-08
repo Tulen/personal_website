@@ -64,13 +64,16 @@ a, a:hover {
 }
 
 #about-body {
-  height: 800px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   background-color: #50514F;
   color: #fdfdfd;
+}
+
+#about-body h1 {
+  padding: 40px;
 }
 
 .about__first {
@@ -83,10 +86,28 @@ a, a:hover {
   font-size: 1.5em;
 }
 
+.about__skills span {
+  display: flex;
+  align-items: center;
+  background-color: #262934;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.about__skills span > i{
+  padding: 10px;
+}
+
+.about__profile {
+  text-align: center;
+}
+
 .about__img {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
   height: 250px;
   width: 250px;
   border-radius: 125px;
@@ -97,6 +118,10 @@ a, a:hover {
   height: 248px;
   width: 248px;
   border-radius: 124px;
+}
+
+.about__desc {
+  padding: 20px;
 }
 
 #portfolio-grid div {
@@ -138,17 +163,6 @@ a, a:hover {
   background-position: center;
   height: 100%;
   width: 100%;
-}
-
-/* .container-fluid div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-} */
-
-h3 {
-  margin: 0;
 }
 
 ul {
@@ -248,9 +262,18 @@ a:focus , a:visited {
   #burger {display: block; position: fixed; padding: 15px;}
 }
 
+@media screen and (max-width: 596px) {
+  #about-body h1 { font-size: 32px;}
+  #about-body h4 { font-size: 12px;}
+  .about__img { height: 200px; width: 200px}
+  .about__img img { height: 198px; width: 198px}
+  .about__skills { font-size: 1em }
+}
+
 @media screen and (max-width: 992px) { 
   #portfolio-grid .col-md-6 { 
     align-items: center;
     text-align: center;
   }
  }
+
