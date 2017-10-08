@@ -65,16 +65,38 @@ a, a:hover {
 
 #about-body {
   height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   background-color: #50514F;
   color: #fdfdfd;
 }
 
-.about__text {
-  width: 80%;
+.about__first {
+  width: 90%;
 }
 
-.about__text h3 {
-  padding: 20px;
+.about__skills {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5em;
+}
+
+.about__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 250px;
+  border-radius: 125px;
+  border: 2px solid white;
+}
+
+.about__img img {
+  height: 248px;
+  width: 248px;
+  border-radius: 124px;
 }
 
 #portfolio-grid div {
