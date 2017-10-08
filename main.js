@@ -1,16 +1,16 @@
 // Resources: https://css-tricks.com/snippets/jquery/smooth-scrolling/
 
-// const state = {
-//   aboutDisplay: false,
-//   projectDisplay: false,
-//   contactDisplay: false
-// }
+
 
 $(document).ready(function() {
-  // $('.about__switch').click(function(e) {
-  //   state.aboutDisplay ? state.aboutDisplay = false : state.aboutDisplay = true;
-  //   alert(state.aboutDisplay);
-  // })
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > (window.innerHeight - 100)) {
+      $('.navbar-fixed-top').fadeIn(600);
+      $('.navbar-fixed-top').css("display", "flex");
+    } else {
+      $('.navbar-fixed-top').fadeOut(600);
+    }
+  });
   $('a[href*="#"]').click(function(e) {
     if (
       location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')

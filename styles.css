@@ -2,11 +2,25 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
-.container-fluid {
-  height: 100vh;
+a, a:hover {
+  color: inherit;
+}
+
+.navbar {
+  height: 50px;
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
+  background-color:white;
+  margin: 0;
+  border: none;
+}
+
+.navbar-fixed-top {
+   display: none;
+}
+
+.container-fluid {
   outline: none;
 }
 
@@ -17,13 +31,15 @@ body {
 }
 
 .about__intro {
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-.about__intro > *  {
-  margin-bottom: 10px;
+.about__intro h1 {
+  font-size: 3em;
 }
 
 .about__name {
@@ -48,8 +64,8 @@ body {
 }
 
 #about-body {
+  height: 800px;
   background-color: #50514F;
-  height: 500px;
   color: #fdfdfd;
 }
 
@@ -130,7 +146,6 @@ ul {
 a:hover {
   text-decoration: none;
   cursor: pointer;
-  color: #D94F5C;
 }
 
 a:focus , a:visited {
@@ -178,20 +193,7 @@ a:focus , a:visited {
 
 /* ***** */
 
-nav {
-  display: flex;
-  justify-content: flex-end;
-}
 
-nav ul {
-  width: 33vw;
-  display: flex;
-  justify-content: space-around;
-  list-style-type: none;
-  position: fixed;
-  padding: 15px;
-  font-weight: bold;
-}
 
 #burger {
   display: none;
