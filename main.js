@@ -1,8 +1,6 @@
-// Resources: https://css-tricks.com/snippets/jquery/smooth-scrolling/
+$(document).ready(function() { 
 
-
-
-$(document).ready(function() {
+  // navbar appear on scroll
   $(window).scroll(function () {
     if ($(this).scrollTop() > (window.innerHeight - 100)) {
       $('.navbar-fixed-top').fadeIn(600);
@@ -11,6 +9,8 @@ $(document).ready(function() {
       $('.navbar-fixed-top').fadeOut(600);
     }
   });
+
+  // slow scroll
   $('a[href*="#"]').click(function(e) {
     if (
       location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
@@ -36,5 +36,15 @@ $(document).ready(function() {
         })
       }
     }
+  });
+
+  // portfolio overlay
+  $('.portfolio__item').hover(function(e) {
+    if ($(this).children('.portfolio__overlay').is(':hidden')) {
+      $(this).children('.portfolio__overlay').fadeIn(1000);
+    } else {
+      $(this).children('.portfolio__overlay').fadeOut(500);
+    }
+    
   })
 })
