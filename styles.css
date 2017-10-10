@@ -2,10 +2,7 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
-.hidden {
-}
-
-a, a:hover {
+a, a:hover, a:focus {
   color: inherit;
   text-decoration: none;
 }
@@ -172,30 +169,30 @@ a, a:hover {
   display: none;
 }
 
-#burger {
-  display: none;
-  right: 10px;
-}
-
 #contact {
-  justify-content: space-between;
+  background-color: #262934;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.contact__list {
-  list-style-type: none;
+.fa {
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid white;
 }
 
-.contact__item {
-  padding: 15px;
-}
-
-.contact__item a{
-  padding: 0;
-}
-
-.contact__item > * > a > i {
-  padding: 15px;
+.fa:hover {
+  background-color: #eecc31;
+  border: 2px solid #262934;
+  color: #262934;
+  cursor: pointer;
+  transition-duration: .5s;
 }
 
 @media screen and (max-width: 700px) {
