@@ -108,7 +108,14 @@ a, a:hover, a:focus {
 }
 
 .about__profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+}
+
+.about__profile .about__button:hover {
+  border-color: #50514F;
 }
 
 .about__img {
@@ -131,6 +138,7 @@ a, a:hover, a:focus {
 .about__desc {
   padding: 20px;
 }
+
 
 #portfolio {
   display: flex;
@@ -192,7 +200,7 @@ a, a:hover, a:focus {
   border: 2px solid #262934;
   color: #262934;
   cursor: pointer;
-  transition-duration: .5s;
+  transition-duration: .2s;
 }
 
 @media screen and (max-width: 700px) {
